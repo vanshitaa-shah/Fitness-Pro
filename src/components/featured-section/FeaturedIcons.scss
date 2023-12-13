@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.section-featured {
+  flex-direction: column;
+  gap: 2rem;
+
+  &-heading {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: $text-dark;
+  }
+  .featured-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 15%;
+    }
+  }
+}
