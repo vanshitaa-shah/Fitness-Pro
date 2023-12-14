@@ -1,8 +1,35 @@
 $bg-light: rgba(252, 252, 253, 1);
 $bg-dark: rgba(20, 20, 22, 1);
-$text-grey: rgba(119, 126, 144, 1);
-$text-dark: rgba(35, 38, 47, 1);
+
+$primary-color: rgba(255, 89, 44, 1);
+
+$text-primary-light: rgba(35, 38, 47, 1);
+$text-secondary-light: rgba(119, 126, 144, 1);
+$text-neutral-light: rgba(53, 57, 69, 1);
+
+$text-primary-dark: rgba(252, 252, 253, 1);
+$text-secondary-dark: rgba(119, 126, 144, 1);
+$text-neutral-dark: rgba(230, 232, 236, 1);
 
 $grey-border: rgb(230, 232, 236);
 
-$primary-color: rgba(255, 89, 44, 1);
+$blue-box: rgba(55, 114, 255, 1);
+$purple-box: rgba(151, 87, 215, 1);
+$pink-box: rgba(239, 70, 111, 1);
+$green-box: rgba(69, 178, 107, 1);
+
+:root {
+  --bg: #{$bg-light};
+
+  --text-primary: #{$text-primary-light};
+  --text-secondary: #{$text-secondary-light};
+  --text-neutral: #{$text-neutral-light};
+}
+
+:root.dark {
+  --bg: #{$bg-dark};
+
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+  --text-neutral: #{$text-neutral-dark};
+}

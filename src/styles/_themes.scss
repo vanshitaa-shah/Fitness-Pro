@@ -1,3 +1,4 @@
+@import "./variables";
 @mixin theme($bg) {
   background-color: $bg;
 }

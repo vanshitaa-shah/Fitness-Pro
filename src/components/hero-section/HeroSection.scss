@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 .section-hero {
   gap: 2rem;
+  margin-bottom: 4.6rem !important;
 
   &-left {
     flex: 1;
@@ -8,7 +9,7 @@
       font-size: 1.6rem;
       font-weight: 700;
       line-height: 1.6rem;
-      color: $text-grey;
+      color: var(--text-secondary);
       text-transform: uppercase;
       margin-bottom: 1.8rem;
     }
@@ -18,7 +19,7 @@
       font-size: 1.6rem;
       font-weight: 400;
       line-height: 2.4rem;
-      color: $text-grey;
+      color: var(--text-secondary);
       margin-top: 1.8rem;
     }
 
@@ -43,7 +44,7 @@
   border: 3px solid $grey-border;
   border-radius: 50%;
   font-size: 1.8rem;
-  color: $text-grey;
+  color: var(--text-secondary);
   text-align: center;
   span {
     display: inline-block;

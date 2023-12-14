@@ -4,7 +4,7 @@
   height: 10rem;
   justify-content: space-between;
   gap: 5%;
-  background-color: $bg-light;
+  background-color: var(--bg);
   &-logo-link {
     // padding: 1.2rem 4.8rem;
     padding-left: 0;
@@ -21,7 +21,7 @@
     gap: 10%;
     a {
       font-size: 1.4rem;
-      color: $text-grey;
+      color: var(--text-secondary);
 
       &:hover {
         color: $primary-color;
@@ -77,7 +77,7 @@
     }
 
     &-menu {
-      background-color: $bg-light;
+      background-color: var(--bg);
       z-index: 99;
       position: absolute;
       top: 0;

@@ -19,11 +19,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-  @include theme($bg-light);
-}
-
-body.dark-theme {
-  @include theme($bg-dark);
+  background-color: var(--bg);
 }
 
 ul {
@@ -40,6 +36,7 @@ h1 {
   line-height: 6.4rem;
   letter-spacing: -0.02em;
   text-align: left;
+  color: var(--text-primary);
 }
 
 h2 {
@@ -48,6 +45,7 @@ h2 {
   line-height: 5.6rem;
   letter-spacing: -0.02em;
   text-align: left;
+  color: var(--text-primary);
 }
 
 h3 {
@@ -70,10 +68,19 @@ p {
   font-family: "Poppins", sans-serif;
 }
 
+.header-logo path {
+  fill: var(--text-primary);
+}
+
 button {
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+
+button.ant-btn-default {
+  background-color: var(--bg);
+  color: var(--text-primary);
 }
 
 button > span {
