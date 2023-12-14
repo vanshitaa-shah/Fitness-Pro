@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeroSection.scss";
+import "./SectionStyles.scss";
 
 const ArrowDown = () => {
   return (
