@@ -1,4 +1,3 @@
-import { Button } from "antd";
 import FeacturedIcons from "../components/featured-section/FeacturedIcons";
 import ArrowDown from "../components/reusable-section/ArrowDown";
 import SectionContent from "../components/reusable-section/SectionContent";
@@ -10,6 +9,8 @@ import Hero from "../assets/images/hero-section/hero.png";
 import Fitness from "../assets/images/fitness-section/fitness.png";
 import Watch from "../assets/images/book-class-section/watch.png";
 import SectionCard from "../components/book-class-section/SectionCard";
+import SectionHeading from "../components/section-heading/SectionHeading";
+import SectionFeatures from "../components/workout-features/SectionFeatures";
 
 const Home = () => {
   return (
@@ -54,6 +55,14 @@ const Home = () => {
             <SectionImg src={Watch} alt="a" />
             <SectionCard />
           </div>
+        </section>
+
+        <section className="container flex section-new-workouts my-section">
+          <SectionHeading
+            title="New workouts added every week"
+            heading="A new fitness experience for everyone"
+          />
+          <SectionFeatures />
         </section>
       </Layout>
     </>

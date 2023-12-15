@@ -1,0 +1,25 @@
+.section-heading {
+  max-width: 60rem;
+  margin-bottom: 4.8rem;
+
+  .section-headline,
+  .section-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-heading {
+    .section-headline {
+      width: 75%;
+      margin: 0 auto;
+      text-align: start;
+    }
+  }
+}
