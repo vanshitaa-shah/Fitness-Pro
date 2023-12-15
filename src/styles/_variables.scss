@@ -1,5 +1,8 @@
-$bg-light: rgba(252, 252, 253, 1);
-$bg-dark: rgba(20, 20, 22, 1);
+$bg-light: rgba(252, 252, 253, 0.95);
+$bg-dark: rgba(20, 20, 22, 0.95);
+
+$bg-grey-light: rgba(244, 245, 246, 1);
+$bg-grey-dark: rgba(35, 38, 47, 1);
 
 $primary-color: rgba(255, 89, 44, 1);
 
@@ -21,6 +24,8 @@ $green-box: rgba(69, 178, 107, 1);
 :root {
   --bg: #{$bg-light};
 
+  --bg-grey: #{$bg-grey-light};
+
   --text-primary: #{$text-primary-light};
   --text-secondary: #{$text-secondary-light};
   --text-neutral: #{$text-neutral-light};
@@ -28,6 +33,8 @@ $green-box: rgba(69, 178, 107, 1);
 
 :root.dark {
   --bg: #{$bg-dark};
+
+  --bg-grey: #{$bg-grey-dark};
 
   --text-primary: #{$text-primary-dark};
   --text-secondary: #{$text-secondary-dark};

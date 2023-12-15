@@ -15,8 +15,8 @@ const Step = ({ Icon, step, title, desc, color }: StepProps) => {
       <div className="section-how-step flex">
         <div className={`icon-container ${color}`}>{<Icon />}</div>
         <p className="section-how-step-number">{step}</p>
-        <p className="section-how-step-title">{title}</p>
-        <p className="section-how-step-desc">{desc}</p>
+        <p className="section-how-step-title normal">{title}</p>
+        <p className="section-how-step-desc small-light">{desc}</p>
       </div>
     </>
   );

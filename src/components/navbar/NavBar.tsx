@@ -15,19 +15,21 @@ const NavBar = () => {
     console.log("he");
   };
   return (
-    <header className="header container flex">
-      <Link to={"/"} className="header-logo-link">
-        <div className="header-logo flex ">
-          <LogoIcon />
-          <LogoImg />
-        </div>
-      </Link>
-      <NavMenu />
-      <SocialLinks />
-      <Button className="header-btn">Get free trial</Button>
+    <header>
+      <div className="header container flex">
+        <Link to={"/"} className="header-logo-link">
+          <div className="header-logo flex ">
+            <LogoIcon />
+            <LogoImg />
+          </div>
+        </Link>
+        <NavMenu />
+        <SocialLinks />
+        <Button className="header-btn">Get free trial</Button>
 
-      <div className="header-toggle-icon" onClick={toggleNavMenu}>
-        <BurgerIcon />
+        <div className="header-toggle-icon" onClick={toggleNavMenu}>
+          <BurgerIcon />
+        </div>
       </div>
     </header>
   );

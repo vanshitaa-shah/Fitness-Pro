@@ -5,7 +5,7 @@ export const theme = {
   components: {
     Button: {
       borderRadius: 90,
-      fontSize: 12,
+      fontSize: 14,
       fontWeight: 800,
       paddingBlock: "20px",
       paddingInline: "28px",

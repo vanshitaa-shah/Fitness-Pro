@@ -18,7 +18,7 @@ const SectionContent = ({
 }: SectionContentProps) => {
   return (
     <div className="section-left">
-      {title && <p className="section-title">{title}</p>}
+      {title && <p className="section-title bold">{title}</p>}
       <h1 className="section-heading">{heading}</h1>
       <p className="section-tagline">{tagline}</p>
 

@@ -3,12 +3,10 @@
   gap: 2rem;
 
   &-heading {
-    font-family: "Poppins";
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-    color: var(--text-primary);
+    font-family: "Poppins", sans-serif;
+    color: var(--text-primary) !important;
   }
+
   .featured-icons {
     width: 100%;
     display: flex;

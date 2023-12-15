@@ -1,4 +1,7 @@
 @import "./variables";
-@mixin theme($bg) {
-  background-color: $bg;
+@mixin commonStyles($f-weight, $f-size, $l-height, $-color) {
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  color: $-color;
 }

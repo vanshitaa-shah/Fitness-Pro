@@ -1,27 +1,28 @@
 @import "../../styles/variables";
 .section-hero,
-.section-fitness,
 .section-fitness {
   gap: 2rem;
+}
+
+.section-hero {
   margin-bottom: 4.6rem !important;
 }
+
+.section-fitness .section-tagline {
+  width: 95% !important;
+  font-size: 2.4rem !important;
+  line-height: 3.2rem !important;
+}
+
 .section-left {
   flex: 1;
   .section-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 1.6rem;
-    color: var(--text-secondary);
     text-transform: uppercase;
     margin-bottom: 1.8rem;
   }
 
   .section-tagline {
     width: 65%;
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-    color: var(--text-secondary);
     margin-top: 1.8rem;
   }
 
@@ -34,7 +35,7 @@
 .section-right {
   flex: 1;
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -56,10 +57,12 @@
 
 @media screen and (max-width: 768px) {
   .section-hero,
-  .section-fitness {
+  .section-fitness,
+  .section-book-class > .flex {
     flex-direction: column;
     gap: 2rem;
   }
+
   .section-fitness {
     flex-direction: column-reverse;
   }
@@ -67,6 +70,12 @@
     img {
       width: 80%;
       margin: 0 auto;
+    }
+  }
+
+  .section-book-class {
+    img {
+      width: 100%;
     }
   }
 }

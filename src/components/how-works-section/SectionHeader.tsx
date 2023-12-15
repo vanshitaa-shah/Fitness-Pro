@@ -6,8 +6,8 @@ const SectionHeader = () => {
     <div className="section-how-header">
       <h2>How it work</h2>
       <p>
-        built in React Native. Stacks is a production-ready library of stackable
-        content blocks
+        Stacks is a production-ready library of stackable content blocks built
+        in React Native.
       </p>
     </div>
   );
