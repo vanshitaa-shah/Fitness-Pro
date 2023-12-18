@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .section-new-workouts {
-  border-bottom: 1px solid $grey-border;
+  border-bottom: 1px solid var(--grey-border);
   > .flex {
     flex-direction: column;
   }
@@ -14,7 +14,7 @@
       padding: 0 6.4rem;
 
       &:not(:last-child) {
-        border-right: 1px solid $grey-border;
+        border-right: 1px solid var(--grey-border);
       }
 
       &-title {
@@ -35,7 +35,7 @@
       .new-feature {
         padding: 6.4rem;
         &:not(:last-child) {
-          border-bottom: 1px solid $grey-border;
+          border-bottom: 1px solid var(--grey-border);
           border-right: none;
         }
       }

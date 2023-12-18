@@ -37,10 +37,6 @@ const SectionTrainers = () => {
       setIsNextDisabled(
         list[0].scrollLeft >= list[0].scrollWidth - list[0].clientWidth - 50
       );
-      console.log(
-        list[0].scrollLeft,
-        list[0].scrollWidth - list[0].clientWidth
-      );
     };
 
     list[0].addEventListener("scroll", handleScroll);

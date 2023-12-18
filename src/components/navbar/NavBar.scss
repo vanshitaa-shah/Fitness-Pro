@@ -16,7 +16,7 @@ header {
   &-logo-link {
     padding: 1.2rem 4.8rem;
     padding-left: 0;
-    border-right: 1px solid $grey-border;
+    border-right: 1px solid var(--grey-border);
   }
 
   &-logo {
@@ -54,7 +54,7 @@ header {
   &-btn {
     display: flex;
     align-items: center;
-    border: 2px solid $grey-border;
+    border: 2px solid var(--grey-border);
     padding: 12px 16px;
   }
 

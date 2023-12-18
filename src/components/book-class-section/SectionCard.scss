@@ -31,7 +31,7 @@
       cursor: pointer;
       padding: 2rem;
       &.border {
-        border: 2px solid $grey-border;
+        border: 2px solid var(--grey-border);
         border-radius: 12px;
       }
       .icon-container {
