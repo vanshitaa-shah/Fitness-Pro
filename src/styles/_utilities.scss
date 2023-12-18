@@ -10,8 +10,19 @@
 
 .my-section {
   margin-top: 12rem;
-  margin-bottom: 9.6rem;
+  margin-bottom: 12rem;
 }
+
+.section-featured.my-section {
+  margin-top: 6rem;
+}
+
+.section-new-workouts.my-section {
+  margin-top: 0;
+  padding-bottom: 12rem;
+  margin-bottom: 22rem;
+}
+
 .py-96 {
   padding-top: 9.6rem;
   padding-bottom: 9.6rem;
@@ -35,6 +46,22 @@
 }
 .small-bold {
   @include commonStyles(700, 1.2rem, 1.2rem, var(--text-secondary));
+}
+
+.icon-container.blue {
+  background-color: $blue-box;
+}
+.icon-container.purple,
+.number-container.purple {
+  background-color: $purple-box;
+}
+.icon-container.pink,
+.number-container.pink {
+  background-color: $pink-box;
+}
+.icon-container.green,
+.number-container.green {
+  background-color: $green-box;
 }
 
 .green {

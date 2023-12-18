@@ -34,7 +34,7 @@
         border: 2px solid $grey-border;
         border-radius: 12px;
       }
-      &-icon-container {
+      .icon-container {
         margin: 1rem;
         min-width: 4rem;
         min-height: 4rem;
@@ -47,7 +47,6 @@
           left: 50%;
           transform: translate(-50%, -50%);
         }
-        background-color: $green-box;
       }
 
       &-content-container {

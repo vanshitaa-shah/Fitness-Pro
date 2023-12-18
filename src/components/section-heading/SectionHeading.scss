@@ -2,20 +2,62 @@
   max-width: 60rem;
   margin-bottom: 4.8rem;
 
+  .section-title {
+    text-transform: uppercase;
+  }
+
+  .section-tagline {
+    margin-top: 2rem;
+  }
+
   .section-headline,
   .section-title {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+.section-services {
   .section-heading {
+    display: flex;
+    min-width: 100%;
+    .section-title {
+      min-width: 30%;
+      text-align: start;
+    }
+    &-main {
+      width: 55%;
+      margin-left: auto;
+      .section-headline {
+        text-align: start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-heading,
+  .section-services .section-heading {
     width: 90%;
+  }
+
+  .section-services .section-heading {
+    display: block;
+    .section-title {
+      min-width: 100%;
+      text-align: center;
+    }
+    &-main {
+      width: 90%;
+      .section-headline {
+        text-align: center;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 425px) {
-  .section-heading {
+  .section-heading,
+  .section-services .section-heading {
     .section-headline {
       width: 75%;
       margin: 0 auto;

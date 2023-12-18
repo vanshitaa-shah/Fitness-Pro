@@ -17,7 +17,7 @@ const FitnessClass = ({
   const borderStyles = selected ? "border" : "";
   return (
     <div className={`fitness-class flex ${borderStyles}`}>
-      <div className={`fitness-class-icon-container ${color}`}>{<Icon />}</div>
+      <div className={`icon-container ${color}`}>{<Icon />}</div>
       <div className="fitness-class-content-container">
         <p className="fitness-class-title normal">{title}</p>
         <p>{tagline}</p>

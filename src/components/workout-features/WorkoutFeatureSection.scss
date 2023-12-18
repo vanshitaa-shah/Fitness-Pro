@@ -1,7 +1,10 @@
 @import "../../styles/variables";
 
 .section-new-workouts {
-  flex-direction: column;
+  border-bottom: 1px solid $grey-border;
+  > .flex {
+    flex-direction: column;
+  }
 
   .new-features {
     .new-feature {
