@@ -14,6 +14,7 @@ import SectionFeatures from "../components/workout-features/SectionFeatures";
 import ServiceImg from "../assets/images/services-section/service.png";
 import Services from "../components/services-section/Services";
 import { useEffect, useState } from "react";
+import SectionTrainers from "../components/trainers-section/SectionTrainers";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -103,6 +104,18 @@ const Home = () => {
             <Services />
             <SectionImg src={ServiceImg} alt="service scene video" />
           </div>
+        </section>
+
+        <section className=" container flex section-trainers my-section">
+          <SectionHeading
+            heading={isMobile ? "Stacks Team" : "Meet our pro trainers"}
+            tagline={
+              isMobile
+                ? "Stacks is a production-ready library of stackable content blocks."
+                : "From all over the world, we select and provide you a team of seasoned trainers. What's more, the 1-on-1 live practice mode helps you quickly get great results."
+            }
+          />
+          <SectionTrainers />
         </section>
       </Layout>
     </>

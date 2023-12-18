@@ -10,5 +10,13 @@ export const theme = {
       paddingBlock: "20px",
       paddingInline: "28px",
     },
+    Tag: {
+      borderRadiusSM: 100,
+      fontSizeSM: 14,
+    },
+    Select: {
+      borderRadius: 12,
+      optionPadding: "12px 12px",
+    },
   },
 };

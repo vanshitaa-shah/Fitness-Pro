@@ -1,0 +1,11 @@
+.trainer {
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .img-container {
+    background-color: var(--bg-grey);
+    border-radius: 16px;
+    margin-bottom: 1.2rem;
+    overflow: hidden;
+  }
+}
