@@ -19,10 +19,6 @@
     background-color: var(--text-neutral);
     color: var(--bg-grey);
   }
-
-  .arrows {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -33,22 +29,6 @@
       column-gap: 4.8rem;
       overflow: hidden;
       scroll-behavior: smooth;
-    }
-
-    .arrows {
-      display: flex;
-      gap: 1.2rem;
-      p {
-        font-size: 3.4rem;
-        cursor: pointer;
-        color: var(--text-primary);
-        &:hover {
-          transform: scale(1.1);
-        }
-        &.disabled {
-          color: var(--text-secondary);
-        }
-      }
     }
   }
 }

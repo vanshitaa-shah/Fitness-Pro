@@ -1,0 +1,28 @@
+.arrows {
+  display: none !important;
+  gap: 1.2rem;
+  p {
+    font-size: 3.4rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    &:hover {
+      transform: scale(1.1);
+    }
+    &.disabled {
+      color: var(--text-secondary);
+    }
+  }
+}
+
+.section-lead-trainers {
+  .arrows {
+    margin-top: 3.2rem;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .arrows {
+    display: flex !important;
+  }
+}

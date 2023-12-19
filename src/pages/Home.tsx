@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import FeacturedIcons from "../components/featured-section/FeacturedIcons";
 import ArrowDown from "../components/reusable-section/ArrowDown";
 import SectionContent from "../components/reusable-section/SectionContent";
@@ -13,8 +14,10 @@ import SectionHeading from "../components/section-heading/SectionHeading";
 import SectionFeatures from "../components/workout-features/SectionFeatures";
 import ServiceImg from "../assets/images/services-section/service.png";
 import Services from "../components/services-section/Services";
-import { useEffect, useState } from "react";
 import SectionTrainers from "../components/trainers-section/SectionTrainers";
+import LogoTitle from "../assets/images/featured-logos/logo 06.png";
+import SectionLeads from "../components/section-lead-trainers/SectionLeads";
+import Statistics from "../components/statistics-section/Statistics";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -116,6 +119,23 @@ const Home = () => {
             }
           />
           <SectionTrainers />
+        </section>
+
+        <section className=" container flex section-lead-trainers my-section">
+          <SectionHeading
+            TitleLogo={LogoTitle}
+            heading={
+              isMobile
+                ? "Stacks help us reached more potential clients that we never think how to reach via the website. Great work!"
+                : "The greatest fitness app. It's clear the makers behind this thing use it every week, because it is so perfect."
+            }
+          />
+
+          <SectionLeads />
+        </section>
+
+        <section className=" container flex section-statistics my-section">
+          <Statistics />
         </section>
       </Layout>
     </>
