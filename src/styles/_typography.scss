@@ -90,6 +90,10 @@ button > span {
   line-height: 1.6rem;
 }
 
+header + div {
+  margin-top: 10rem;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 50%;

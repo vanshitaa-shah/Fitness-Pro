@@ -24,6 +24,7 @@ const trainers: Trainer[] = [
   { img: Trainer5, name: "Syble Prohaska", role: "Business Analytic" },
   { img: Trainer6, name: "Ila Reinger", role: "Business Analytic" },
 ];
+const list = document.getElementsByClassName("section-trainers-grid");
 
 const SectionTrainers = () => {
   return (
@@ -40,7 +41,7 @@ const SectionTrainers = () => {
         ))}
       </div>
 
-      <ScrollArrows />
+      <ScrollArrows list={list} />
     </>
   );
 };

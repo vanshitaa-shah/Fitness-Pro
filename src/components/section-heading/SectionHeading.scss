@@ -44,6 +44,12 @@
   line-height: 4.8rem;
 }
 
+.section-flexible-features {
+  .section-tagline {
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-heading,
   .section-services .section-heading {
@@ -65,13 +71,13 @@
   }
 }
 
-@media screen and (max-width: 425px) {
-  .section-heading,
-  .section-services .section-heading {
-    .section-headline {
-      width: 75%;
-      margin: 0 auto;
-      text-align: start;
-    }
-  }
-}
+// @media screen and (max-width: 425px) {
+//   .section-heading,
+//   .section-services .section-heading {
+//     .section-headline {
+//       width: 75%;
+//       margin: 0 auto;
+//       text-align: start;
+//     }
+//   }
+// }

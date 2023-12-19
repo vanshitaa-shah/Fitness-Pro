@@ -40,8 +40,9 @@ const statisticsData: StatisticProps[] = [
 const Statistics = () => {
   return (
     <div className="container statistics flex">
-      {statisticsData.map((stat) => (
+      {statisticsData.map((stat, idx) => (
         <Statistic
+          key={idx}
           Icon={stat.Icon}
           heading={stat.heading}
           headline={stat.headline}

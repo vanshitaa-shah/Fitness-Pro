@@ -18,6 +18,16 @@ import SectionTrainers from "../components/trainers-section/SectionTrainers";
 import LogoTitle from "../assets/images/featured-logos/logo 06.png";
 import SectionLeads from "../components/section-lead-trainers/SectionLeads";
 import Statistics from "../components/statistics-section/Statistics";
+import FlexibleFeatures from "../components/flexible-features-section/FlexibleFeatures";
+import TrackWorkout from "../assets/images/track-workouts/track-workouts.png";
+
+const featureList = [
+  "Fitness Pro Cloud",
+  "Syncs with Google Fit",
+  "Syncs with Apple Health",
+  "Track your progress easily",
+  "Intuitive and clean design",
+];
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -31,10 +41,6 @@ const Home = () => {
     checkIsMobile();
 
     window.addEventListener("resize", checkIsMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkIsMobile);
-    };
   }, []);
 
   return (
@@ -136,6 +142,32 @@ const Home = () => {
 
         <section className=" container flex section-statistics my-section">
           <Statistics />
+        </section>
+
+        <section className="section-flexible-features highlighted my-section">
+          <div className="container flex py-96">
+            <SectionHeading
+              heading="For any space, at any pace"
+              tagline="From the comfort of your living room to a hotel room across the globe, we put the best classes at your fingertips. No WiFi? Download videos offline for a practice that moves with you."
+            />
+
+            <FlexibleFeatures />
+          </div>
+        </section>
+
+        <section className="container flex section-track-features my-section">
+          <SectionContent
+            heading="All your workouts,
+            in your pocket"
+            tagline="Fitness Pro helps track your workouts, get better results, and be the best version of you. Less thinking!"
+            btnPrimary="Choose Plan"
+            btnDefault="Request a demo"
+            list={featureList}
+          />
+          <SectionImg
+            src={TrackWorkout}
+            alt="iphones with track-features on screen"
+          />
         </section>
       </Layout>
     </>
