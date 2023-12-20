@@ -13,6 +13,17 @@
   margin-bottom: 22rem;
 }
 
+.section-free-trial {
+  border-top: 1px solid var(--grey-border);
+  // border-bottom: 1px solid var(--grey-border);
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
+  > .flex {
+    flex-direction: column;
+  }
+}
+
 .section-featured.my-section {
   margin-top: 6rem;
 }

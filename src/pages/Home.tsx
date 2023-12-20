@@ -20,6 +20,7 @@ import SectionLeads from "../components/section-lead-trainers/SectionLeads";
 import Statistics from "../components/statistics-section/Statistics";
 import FlexibleFeatures from "../components/flexible-features-section/FlexibleFeatures";
 import TrackWorkout from "../assets/images/track-workouts/track-workouts.png";
+import { Button } from "antd";
 
 const featureList = [
   "Fitness Pro Cloud",
@@ -168,6 +169,18 @@ const Home = () => {
             src={TrackWorkout}
             alt="iphones with track-features on screen"
           />
+        </section>
+
+        <section className="section-free-trial">
+          <div className="container flex">
+            <SectionHeading
+              title="try it free for 14 days 🎾"
+              heading="Anywhere you want. Anytime you want."
+              tagline="Get started with two free weeks of unlimited yoga, fitness, and meditation classes. Cancel anytime."
+            />
+
+            <Button type="primary">Start Free Trial</Button>
+          </div>
         </section>
       </Layout>
     </>

@@ -1,0 +1,27 @@
+.copyright-section {
+  padding: 2rem;
+  justify-content: space-between;
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  &-social-links {
+    gap: 2rem;
+    svg {
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .copyright-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3.2rem;
+  }
+}
