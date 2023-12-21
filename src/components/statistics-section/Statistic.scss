@@ -1,0 +1,36 @@
+.statistics {
+  gap: 4rem;
+  .statistic {
+    &-header,
+    &-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-header {
+      gap: 4.8rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--grey-border);
+    }
+
+    &-footer {
+      padding-top: 3rem;
+      gap: 1.5rem;
+
+      .headline {
+        color: var(--text-primary);
+      }
+
+      .tagline {
+        color: var(--text-secondary) !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statistics {
+    flex-direction: column;
+    gap: 6rem;
+  }
+}

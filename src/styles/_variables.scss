@@ -1,0 +1,50 @@
+$bg-light: rgba(252, 252, 253, 0.95);
+$bg-dark: rgba(20, 20, 22, 0.95);
+
+$bg-grey-light: rgba(244, 245, 246, 1);
+$bg-grey-dark: rgba(35, 38, 47, 1);
+
+$bg-img-container: rgba(177, 181, 195, 1);
+
+$primary-color: rgba(255, 89, 44, 1);
+
+$text-primary-light: rgba(35, 38, 47, 1);
+$text-secondary-light: rgba(119, 126, 144, 1);
+$text-neutral-light: rgba(53, 57, 69, 1);
+
+$text-primary-dark: rgba(252, 252, 253, 1);
+$text-secondary-dark: rgba(119, 126, 144, 1);
+$text-neutral-dark: rgba(230, 232, 236, 1);
+
+$grey-border-light: rgb(230, 232, 236);
+$grey-border-dark: rgba(53, 57, 69, 1);
+
+$blue-box: rgba(55, 114, 255, 1);
+$purple-box: rgba(151, 87, 215, 1);
+$pink-box: rgba(239, 70, 111, 1);
+$green-box: rgba(69, 178, 107, 1);
+
+:root {
+  --bg: #{$bg-light};
+
+  --bg-grey: #{$bg-grey-light};
+
+  --bg-img-container: #{$bg-img-container};
+
+  --grey-border: #{$grey-border-light};
+  --text-primary: #{$text-primary-light};
+  --text-secondary: #{$text-secondary-light};
+  --text-neutral: #{$text-neutral-light};
+}
+
+:root.dark {
+  --bg: #{$bg-dark};
+
+  --bg-grey: #{$bg-grey-dark};
+  --bg-img-container: #{$grey-border-dark};
+
+  --grey-border: #{$grey-border-dark};
+  --text-primary: #{$text-primary-dark};
+  --text-secondary: #{$text-secondary-dark};
+  --text-neutral: #{$text-neutral-dark};
+}

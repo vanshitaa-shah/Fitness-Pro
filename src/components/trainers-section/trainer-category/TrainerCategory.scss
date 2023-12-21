@@ -1,0 +1,12 @@
+.ant-select {
+  display: flex;
+  align-items: center;
+
+  span {
+    color: var(--text-primary) !important;
+  }
+  &-selector {
+    background-color: var(--bg) !important;
+    padding: 2rem !important;
+  }
+}
