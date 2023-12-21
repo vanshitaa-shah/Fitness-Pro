@@ -82,6 +82,10 @@
   @include commonStyles(400, 1.4rem, 2rem, var(--text-secondary));
 }
 
+.small-600 {
+  @include commonStyles(600, 1.2rem, 2rem, $bg-img-container);
+}
+
 .icon-container.blue {
   background-color: $blue-box;
 }
@@ -100,6 +104,9 @@
 
 .green {
   color: $green-box;
+}
+.primary-text {
+  color: $primary-color;
 }
 
 .strong {

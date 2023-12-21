@@ -1,9 +1,12 @@
 import React from "react";
+import { Button } from "antd";
 import SectionContent from "../components/reusable-section/SectionContent";
 import SectionImg from "../components/reusable-section/SectionImg";
 import Layout from "../layout/Layout";
 import Hero from "../assets/images/download-page/hero-section/hero.png";
 import InputComponent from "../components/input-component/InputComponent";
+import Platforms from "../components/platform-section/Platforms";
+import CommunityContent from "../components/community-section/CommunityContent";
 
 const Download = () => {
   return (
@@ -19,6 +22,16 @@ const Download = () => {
             tagline="Track your workouts, get better results, and be the best version of you. Less thinking, more lifting."
             input={<InputComponent />}
           />
+        </section>
+
+        <section className="container section-platform flex my-section">
+          <h2>Choose the plaform</h2>
+          <Platforms />
+          <Button>Contact Us</Button>
+        </section>
+
+        <section className="container section-community flex my-section">
+          <CommunityContent />
         </section>
       </Layout>
     </>
