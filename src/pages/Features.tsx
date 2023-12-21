@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <>
       <Layout>
-        <div>Features</div>
+        <div className="page-content">Features</div>
       </Layout>
     </>
   );

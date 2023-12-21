@@ -5,7 +5,7 @@ const Pricing = () => {
   return (
     <>
       <Layout>
-        <div>Pricing</div>
+        <div className="page-content">Pricing</div>
       </Layout>
     </>
   );

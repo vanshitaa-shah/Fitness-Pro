@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Button, Collapse, Input } from "antd";
 import CopyrightSection from "./copyright-section/CopyrightSection";
 import Logo from "../navbar/Logo";
+import InputComponent from "../input-component/InputComponent";
 
 const footerLinks = [
   {
@@ -98,16 +99,7 @@ const Footer = () => {
                   resource.
                 </p>
 
-                <Input
-                  placeholder="Enter your email"
-                  className="search"
-                  size="large"
-                  suffix={
-                    <Button className="search-btn" type="primary">
-                      <span className="">&rarr;</span>
-                    </Button>
-                  }
-                />
+                <InputComponent />
               </div>
             </div>
           </div>

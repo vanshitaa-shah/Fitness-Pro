@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Button } from "antd";
 import { ReactComponent as Check } from "../../assets/images/track-workouts/check.svg";
 import "./SectionStyles.scss";
@@ -7,9 +7,11 @@ interface SectionContentProps {
   title?: string;
   heading: string;
   tagline: string;
-  btnPrimary: string;
+  btnPrimary?: string;
   btnDefault?: string;
   list?: string[];
+  input?: ReactNode;
+  hr?: boolean;
 }
 
 const SectionContent = ({
@@ -19,11 +21,18 @@ const SectionContent = ({
   btnPrimary,
   btnDefault,
   list,
+  input,
+  hr,
 }: SectionContentProps) => {
   return (
     <div className="section-left">
       {title && <p className="section-title bold">{title}</p>}
       <h1 className="section-heading">{heading}</h1>
+      {hr && (
+        <div className="horizontal-line">
+          <hr />
+        </div>
+      )}
       <p className="section-tagline">{tagline}</p>
 
       {list && (
@@ -37,9 +46,11 @@ const SectionContent = ({
         </div>
       )}
       <div className="section-actions">
-        <Button type="primary">{btnPrimary}</Button>
+        {btnPrimary && <Button type="primary">{btnPrimary}</Button>}
         {btnDefault && <Button>{btnDefault}</Button>}
       </div>
+
+      {input && input}
     </div>
   );
 };

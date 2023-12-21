@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navLinks = [
   {
@@ -21,11 +21,16 @@ const navLinks = [
 ];
 
 const NavMenu = () => {
-  console.log("nav-menu");
+  const pathName = useLocation().pathname;
+  console.log(pathName);
   return (
     <div className="header-menu flex">
       {navLinks.map((item) => (
-        <Link key={item.name} to={item.link}>
+        <Link
+          key={item.name}
+          className={pathName === item.link ? "active" : ""}
+          to={item.link}
+        >
           {item.name}
         </Link>
       ))}
