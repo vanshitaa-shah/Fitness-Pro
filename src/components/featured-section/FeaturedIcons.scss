@@ -1,0 +1,19 @@
+.section-featured {
+  flex-direction: column;
+  gap: 2rem;
+
+  &-heading {
+    font-family: "Poppins", sans-serif;
+    color: var(--text-primary) !important;
+  }
+
+  .featured-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 15%;
+    }
+  }
+}

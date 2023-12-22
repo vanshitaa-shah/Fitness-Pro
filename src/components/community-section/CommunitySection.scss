@@ -1,0 +1,17 @@
+.section-community {
+  flex-direction: column;
+
+  &-img {
+    width: 40rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .section-tagline {
+    text-align: center;
+  }
+
+  .search {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+  }
+}

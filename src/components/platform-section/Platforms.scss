@@ -1,0 +1,42 @@
+.section-platform {
+  flex-direction: column;
+
+  h2,
+  .platforms {
+    border-bottom: 1px solid var(--grey-border);
+    padding: 3.2rem 0;
+    width: 100%;
+  }
+
+  .platforms {
+    margin-bottom: 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .arrows {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-platform {
+    .arrows {
+      display: block;
+      margin: 4rem;
+      margin-top: 0;
+    }
+
+    .platforms {
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom: none;
+    }
+  }
+
+  .section-platform.flex {
+    align-items: flex-start;
+  }
+}

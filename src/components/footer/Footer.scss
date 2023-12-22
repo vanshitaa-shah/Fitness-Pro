@@ -1,0 +1,136 @@
+.section-footer-container {
+  border-top: 1px solid var(--grey-border);
+  border-bottom: 1px solid var(--grey-border);
+
+  .section-footer {
+    display: grid;
+    grid-template-columns: 20% 27% 27% 27%;
+    column-gap: 2rem;
+
+    &-logo,
+    &-newsletter {
+      padding: 9rem 3rem;
+    }
+
+    .small-bold {
+      text-transform: uppercase;
+    }
+
+    &-lifestyle,
+    &-contact {
+      border-right: 1px solid var(--grey-border);
+      padding: 9rem 4rem;
+    }
+
+    &-lifestyle,
+    &-contact,
+    &-newsletter,
+    &-contact .contact-info,
+    .section-mobile-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 3.2rem;
+    }
+
+    &-contact {
+      .contact-info {
+        gap: 2.4rem;
+      }
+    }
+
+    .small-bold {
+      color: var(--text-primary);
+    }
+
+    .mobile-footer-nav {
+      display: none;
+    }
+
+    .mobile-logo {
+      display: none;
+    }
+  }
+}
+
+.ant-collapse {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+
+  &-arrow {
+    transform: rotate(90deg);
+    svg {
+      transform: rotate(0) !important;
+      color: var(--text-primary) !important;
+    }
+  }
+  &-item {
+    border: none !important;
+  }
+
+  &-content {
+    border: none !important;
+    background-color: transparent !important;
+  }
+
+  &-header {
+    padding: 0 !important;
+  }
+
+  &-content-box {
+    padding: 0 !important;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-footer-container {
+    .section-footer {
+      grid-template-columns: 10% 27% 27% 27%;
+      &-logo,
+      &-newsletter {
+        padding: 9rem 0rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-footer-container {
+    border-top: none;
+    border-bottom: none;
+    .section-footer {
+      grid-template-columns: 1fr;
+
+      &-logo {
+        display: none;
+      }
+
+      .mobile-logo {
+        display: block;
+      }
+
+      &-newsletter,
+      &-contact,
+      .mobile-footer-nav {
+        border-bottom: 1px solid var(--grey-border);
+        border-right: none;
+        padding: 4rem 4rem;
+      }
+
+      &-contact {
+        .contact-info {
+          gap: 1rem;
+        }
+      }
+
+      &-lifestyle {
+        display: none;
+      }
+
+      .mobile-footer-nav {
+        display: block;
+      }
+    }
+  }
+}
