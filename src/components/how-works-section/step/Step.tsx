@@ -1,13 +1,6 @@
 import React from "react";
+import { StepProps } from "../../../types/types";
 import "./Step.scss";
-
-interface StepProps {
-  Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  step: string;
-  title: string;
-  desc: string;
-  color: string;
-}
 
 const Step = ({ Icon, step, title, desc, color }: StepProps) => {
   return (

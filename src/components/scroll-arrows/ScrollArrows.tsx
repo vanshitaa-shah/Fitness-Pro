@@ -6,7 +6,6 @@ const ScrollArrows = ({ list }: { list?: HTMLCollectionOf<Element> }) => {
   const [isNextDisabled, setIsNextDisabled] = useState(false);
 
   const itemWidth = 200;
-  console.log(list?.[0]);
 
   useEffect(() => {
     if (list) {

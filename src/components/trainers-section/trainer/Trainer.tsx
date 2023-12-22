@@ -1,11 +1,6 @@
 import React from "react";
+import { TrainerProps } from "../../../types/types";
 import "./Trainer.scss";
-
-interface TrainerProps {
-  img: string;
-  name: string;
-  role: string;
-}
 
 const Trainer = ({ img, name, role }: TrainerProps) => {
   return (

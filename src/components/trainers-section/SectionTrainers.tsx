@@ -9,14 +9,9 @@ import Trainer5 from "../../assets/images/trainers-section/trainer-5.png";
 import Trainer6 from "../../assets/images/trainers-section/trainer-6.png";
 import Trainer from "./trainer/Trainer";
 import ScrollArrows from "../scroll-arrows/ScrollArrows";
+import { TrainerType } from "../../types/types";
 
-interface Trainer {
-  img: string;
-  name: string;
-  role: string;
-}
-
-const trainers: Trainer[] = [
+const trainers: TrainerType[] = [
   { img: Trainer1, name: "Baron Toy", role: "Yoga Master" },
   { img: Trainer2, name: "Kacie Kiehn", role: "Personal Trainer" },
   { img: Trainer3, name: "Marcelino Hettinger", role: "Boxer" },

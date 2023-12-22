@@ -1,13 +1,7 @@
 import { Button, Tag } from "antd";
 import React from "react";
+import { PlatformProps } from "../../../types/types";
 import "./Platform.scss";
-
-interface PlatformProps {
-  Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  tag?: string;
-  color: string;
-  hasAction: boolean;
-}
 
 const Platform = ({ Icon, tag, color, hasAction }: PlatformProps) => {
   const tagColor = tag?.toLowerCase() === "coming soon" ? "success" : "";

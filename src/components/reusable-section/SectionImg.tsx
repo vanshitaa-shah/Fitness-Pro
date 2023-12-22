@@ -1,9 +1,7 @@
 import React from "react";
+import { SectionImgProps } from "../../types/types";
 import "./SectionStyles.scss";
-interface SectionImgProps {
-  src: string;
-  alt: string;
-}
+
 const SectionImg = ({ src, alt }: SectionImgProps) => {
   return (
     <div className="section-right flex">
