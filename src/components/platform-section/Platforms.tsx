@@ -1,17 +1,32 @@
 import React from "react";
-import { Tag } from "antd";
+import { Button, Tag } from "antd";
 import "./Platforms.scss";
+import { ReactComponent as Apple } from "../../assets/images/download-page/platform-section/apple.svg";
+import { ReactComponent as Windows } from "../../assets/images/download-page/platform-section/windows.svg";
+import { ReactComponent as Mac } from "../../assets/images/download-page/platform-section/mac.svg";
+import { ReactComponent as Android } from "../../assets/images/download-page/platform-section/android.svg";
+import Platform from "./platform/Platform";
+import ScrollArrows from "../scroll-arrows/ScrollArrows";
 
+const platformData = [
+  { Icon: Apple, tag: "updated", color: "orange", hasAction: false },
+  { Icon: Windows, tag: "coming soon", color: "green", hasAction: false },
+  { Icon: Mac, tag: "coming soon", color: "pink", hasAction: false },
+  { Icon: Apple, tag: "coming soon", color: "blue", hasAction: true },
+  { Icon: Android, color: "purple", hasAction: false },
+];
+
+const platformList = document.getElementsByClassName("platforms");
 const Platforms = () => {
   return (
-    <div className="platforms">
-      <div className="platform">
-        <div className="platform-icon-container">icon</div>
-        <div className="platform-info">
-          <Tag>Tag 1</Tag>
-        </div>
+    <>
+      <div className="platforms">
+        {platformData.map((data, idx) => (
+          <Platform key={idx} {...data} />
+        ))}
       </div>
-    </div>
+      <ScrollArrows list={platformList} />
+    </>
   );
 };
 
