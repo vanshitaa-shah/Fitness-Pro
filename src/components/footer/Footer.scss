@@ -7,9 +7,6 @@
     grid-template-columns: 20% 27% 27% 27%;
     column-gap: 2rem;
 
-    &-logo {
-    }
-
     &-logo,
     &-newsletter {
       padding: 9rem 3rem;
@@ -41,48 +38,6 @@
       }
     }
 
-    &-newsletter {
-      .search {
-        border: 2px solid var(--grey-border);
-        border-radius: 90px;
-        margin-top: 4rem;
-        background-color: transparent;
-
-        &:focus {
-          box-shadow: none;
-          outline: none;
-        }
-
-        input {
-          background-color: transparent;
-          &::placeholder {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-size: 1.4rem;
-            line-height: 2.4rem;
-            color: var(--text-secondary);
-          }
-        }
-      }
-
-      .search-btn {
-        padding: 2rem;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        span {
-          display: inline-block;
-          position: absolute;
-          top: 40%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          font-size: 3.2rem;
-        }
-      }
-    }
-
     .small-bold {
       color: var(--text-primary);
     }
@@ -100,6 +55,7 @@
 .ant-collapse {
   background-color: transparent;
   border: none;
+  border-radius: 0;
 
   &-arrow {
     transform: rotate(90deg);

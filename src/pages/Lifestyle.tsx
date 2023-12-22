@@ -5,7 +5,7 @@ const Lifestyle = () => {
   return (
     <>
       <Layout>
-        <div>Lifestyle</div>
+        <div className="page-content">Lifestyle</div>
       </Layout>
     </>
   );

@@ -95,6 +95,15 @@ header + div {
   margin-top: 10rem;
 }
 
+a.active {
+  color: $primary-color;
+}
+
+hr {
+  border: 1px solid var(--grey-border);
+  width: 20rem;
+}
+
 @media screen and (max-width: 1024px) {
   html {
     font-size: 50%;
