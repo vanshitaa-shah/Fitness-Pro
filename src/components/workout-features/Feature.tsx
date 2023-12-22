@@ -1,11 +1,6 @@
 import React from "react";
+import { FeatureProps } from "../../types/types";
 import "./WorkoutFeatureSection.scss";
-
-interface FeatureProps {
-  Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  title: string;
-  tagline: string;
-}
 
 const Feature = ({ Icon, title, tagline }: FeatureProps) => {
   return (

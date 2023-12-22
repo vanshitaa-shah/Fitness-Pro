@@ -1,12 +1,6 @@
 import React from "react";
+import { SectionHeadingProps } from "../../types/types";
 import "./SectionHeading.scss";
-
-interface SectionHeadingProps {
-  TitleLogo?: string;
-  title?: string;
-  heading: string;
-  tagline?: string;
-}
 
 const SectionHeading = ({
   TitleLogo,

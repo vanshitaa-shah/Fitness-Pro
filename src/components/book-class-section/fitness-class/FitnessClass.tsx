@@ -1,11 +1,5 @@
 import React from "react";
-interface FitnessClassProps {
-  Icon: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-  title: string;
-  tagline: string;
-  color: string;
-  selected: boolean;
-}
+import { FitnessClassProps } from "../../../types/types";
 
 const FitnessClass = ({
   Icon,

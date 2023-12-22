@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { ReactComponent as LightMode } from "../../../assets/images/dark-light-mode/light-mode.svg";
 import { ReactComponent as DarkMode } from "../../../assets/images/dark-light-mode/dark-mode.svg";
 import "./ThemeMode.scss";
+import { ThemeType } from "../../../types/types";
 
-type ThemeType = "light" | "dark";
 export const ThemeMode = () => {
   const [mode, setmode] = useState<ThemeType>(
     () => (localStorage.getItem("mode") as ThemeType) || "light"

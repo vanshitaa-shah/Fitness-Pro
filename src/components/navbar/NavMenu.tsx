@@ -22,7 +22,7 @@ const navLinks = [
 
 const NavMenu = () => {
   const pathName = useLocation().pathname;
-  console.log(pathName);
+
   return (
     <div className="header-menu flex">
       {navLinks.map((item) => (

@@ -2,17 +2,7 @@ import React, { ReactNode } from "react";
 import { Button } from "antd";
 import { ReactComponent as Check } from "../../assets/images/track-workouts/check.svg";
 import "./SectionStyles.scss";
-
-interface SectionContentProps {
-  title?: string;
-  heading: string;
-  tagline: string;
-  btnPrimary?: string;
-  btnDefault?: string;
-  list?: string[];
-  input?: ReactNode;
-  hr?: boolean;
-}
+import { SectionContentProps } from "../../types/types";
 
 const SectionContent = ({
   title,
